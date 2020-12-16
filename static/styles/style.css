@@ -194,6 +194,18 @@ body {
   margin-bottom: 40px;
 }
 
+.social__icons {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__icons i {
+  color: rebeccapurple;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
 .avatar img {
   height: 60px;
   width: 60px;
@@ -473,18 +485,6 @@ body {
 
   .sidebar__right--top2-1 span h5 {
     margin-bottom: 3px;
-  }
-
-  .social__icons {
-    margin-top: 8px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .social__icons i {
-    color: rebeccapurple;
-    font-size: 20px !important;
-    cursor: pointer;
   }
 
   .sidebar__right--top2-1 span h2 {
