@@ -324,11 +324,9 @@ body {
 }
 
 .msger-inputarea * {
-  padding-left: 4px;
   border-radius: 7px;
   font-size: 1em;
   outline: none;
-  /* background: white; */
 }
 
 .msger-input {
@@ -337,22 +335,21 @@ body {
 }
 
 .msger-send-btn {
-  /* margin-left: 10px;
-  background: #993399;
-
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.23s;
-  border: 1px solid rebeccapurple; */
   color: rebeccapurple;
   border: none;
   font-size: 24px;
-  align-self: center;
+}
+
+.fa-paper-plane {
+  padding: 10px;
+  font-size: 24px;
+  background: gainsboro;
+  color: rebeccapurple;
 }
 
 .fa-paperclip {
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
   background: gainsboro;
   color: rebeccapurple;
   margin: 0 7px;
