@@ -12,9 +12,10 @@ const BOT_IMG = "static/resources/pp.jpg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 const BOT_NAME = "Samira";
 const PERSON_NAME = "You";
-let userMsgCount=0;
-let userName= window.location.pathname;
-
+let userMsgCount = 0;
+let userName = window.location.pathname;
+const modalEle = document.querySelector(".modal");
+const modalImage = document.querySelector(".modalImage");
 
 function myFunction(classN) {
   let element = document.body;
@@ -61,7 +62,7 @@ function appendMessage(name, img, side, text) {
 }
 
 function botResponse(rawText) {
-  userMsgCount=userMsgCount+1;
+  userMsgCount = userMsgCount + 1;
   // Bot Response
   $.get("/get", {
     msg: rawText,
@@ -105,4 +106,14 @@ profileButton.addEventListener("click", () => {
 
 profileButton2.addEventListener("click", () => {
   sideBarRight.style.display = "block";
+});
+
+Array.from(document.querySelectorAll(".ImgThumbnail")).forEach((item) => {
+  item.addEventListener("click", (event) => {
+    modalEle.style.display = "block";
+    modalImage.src = event.target.src;
+  });
+});
+document.querySelector(".close").addEventListener("click", () => {
+  modalEle.style.display = "none";
 });

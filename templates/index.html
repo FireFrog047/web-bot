@@ -20,7 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
-<body>
+  <body>
     <div class="wrapper">
       <div class="backdrop"></div>
       <div class="header">
@@ -32,6 +32,7 @@
           <a class="header__name">
             <div class="header__name--title">
               <h5><span>Samira</span></h5>
+              <i class="fas fa-external-link-alt" style="color: #3f3fff"></i>
             </div>
             <div class="header__name--description">
               <i class="fa fa-circle" style="color: green; font-size: 10px"></i>
@@ -67,18 +68,57 @@
             <span><i class="fas fa-times cross"></i></span>
           </div>
           <div class="sidebar__right--top2">
-            <figure class="avatar">
-              <a href="#"><img src="static/resources/pp.jpg" alt="" /></a>
-            </figure>
-            <span><h5>Samira</h5></span>
-            <span><p>Last seen : today</p></span>
-            <span><h6>about</h6></span>
+            <div class="sidebar__right--top2-1">
+              <figure class="avatar">
+                <a href="#"><img src="static/resources/pp.jpg" alt="" /></a>
+              </figure>
+              <span><h5>Samira</h5></span>
+              <span><p>Last seen : today</p></span>
+            </div>
+
+            <div class="sidebar__right--top2-1">
+              <span><h2>About</h2></span>
+              <span><h5>City:</h5></span>
+              <span><p>London</p></span>
+              <span><h5>Age:</h5></span>
+              <span><p>25</p></span>
+            </div>
           </div>
-          <div class="sidebar__right--top3">
-            <span><h5>City:</h5></span>
-            <span><p>London</p></span>
-            <span><h5>Age:</h5></span>
-            <span><p>25</p></span>
+          <div class="container">
+            <span>
+              <img
+                class="ImgThumbnail"
+                src="https://source.unsplash.com/600x600/?sig=1"
+              />
+            </span>
+            <span>
+              <img
+                class="ImgThumbnail"
+                src="https://source.unsplash.com/600x600/?sig=40"
+              />
+            </span>
+            <span class="horizontal">
+              <img
+                class="ImgThumbnail"
+                src="https://source.unsplash.com/600x600/?sig=12"
+              />
+            </span>
+            <span>
+              <img
+                class="ImgThumbnail"
+                src="https://source.unsplash.com/600x600/?sig=71"
+              />
+            </span>
+            <span>
+              <img
+                class="ImgThumbnail"
+                src="https://source.unsplash.com/600x600/?sig=32"
+              />
+            </span>
+          </div>
+          <div class="modal">
+            <span class="close">×</span>
+            <img class="modalImage" id="img01" />
           </div>
         </section>
       </div>
@@ -114,7 +154,6 @@
         </button>
       </form>
     </div>
-  <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
   </body>
-
 </html>
