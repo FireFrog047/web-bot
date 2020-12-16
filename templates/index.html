@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+<body>
+    <div class="wrapper">
+      <div class="backdrop"></div>
+      <div class="header">
+        <div type="button" class="header__top">
+          <a class="header__avatar button-2">
+            <img src="static/resources/pp.jpg" alt="" />
+          </a>
+
+          <a class="header__name">
+            <div class="header__name--title">
+              <h5><span>Samira</span></h5>
+            </div>
+            <div class="header__name--description">
+              <i class="fa fa-circle" style="color: green; font-size: 10px"></i>
+              <p><span>online</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="header__bottom">
+          <span
+            class="header__bottom--icon"
+            style="color: rebeccapurple; font-size: 40px"
+            ><i class="fas fa-hamburger"></i
+          ></span>
+          <!-- <button class="btn">☰</button> -->
+          <!-- <button class="btn-1">PROFILE</button> -->
+        </div>
+        <div class="sidebar__left">
+          <span class="sidebar__left--icon"
+            ><i class="far fa-comment"></i
+          ></span>
+          <span class="sidebar__left--icon"><i class="fas fa-phone"></i></span>
+          <!-- <span class="sidebar__left--icon"><i class="far fa-moon"></i></span> -->
+          <div>
+            <button onclick="myFunction('dark-mode')" class="btn-1">
+              <i class="far fa-moon"></i>
+            </button>
+          </div>
+        </div>
+        <!--sidebar__right--active-->
+        <section class="sidebar__right">
+          <div class="sidebar__right--top1">
+            <span><h3>PROFILE</h3></span>
+            <span><i class="fas fa-times cross"></i></span>
+          </div>
+          <div class="sidebar__right--top2">
+            <figure class="avatar">
+              <a href="#"><img src="static/resources/pp.jpg" alt="" /></a>
+            </figure>
+            <span><h5>Samira</h5></span>
+            <span><p>Last seen : today</p></span>
+            <span><h6>about</h6></span>
+          </div>
+          <div class="sidebar__right--top3">
+            <span><h5>City:</h5></span>
+            <span><p>London</p></span>
+            <span><h5>Age:</h5></span>
+            <span><p>25</p></span>
+          </div>
+        </section>
+      </div>
+      <!--message area-->
+      <main class="msger-chat">
+        <div class="msg left-msg">
+          <div class="msg-img">
+            <img src="static/resources/pp.jpg" alt="" />
+          </div>
+
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Samira</div>
+              <div class="msg-info-time">12:45</div>
+            </div>
+
+            <div class="msg-text">
+              Hi I am jervis and i am an assistant of sherlock 😄
+            </div>
+          </div>
+        </div>
+      </main>
+      <form class="msger-inputarea">
+        <input
+          type="text"
+          class="msger-input"
+          id="textInput"
+          placeholder=" Write a message."
+        />
+        <span><i class="fas fa-paperclip"></i></span>
+        <button type="submit" class="msger-send-btn">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+  </body>
+
+</html>
