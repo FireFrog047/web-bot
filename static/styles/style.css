@@ -195,7 +195,7 @@ body {
 }
 
 .social__icons {
-  margin-top: 8px;
+  /* margin-top: 17px; */
   display: flex;
   justify-content: space-between;
 }
@@ -482,6 +482,7 @@ body {
   .sidebar__right--top2-1 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .sidebar__right--top2-1 span h5 {
