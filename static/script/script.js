@@ -8,15 +8,15 @@ const profileButton2 = document.querySelector(".header__name");
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
-const BOT_NAME = "test";
-const BOT_IMG = "static/resources/pp.jpg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-
 const PERSON_NAME = "You";
 let userMsgCount = 0;
 let userName = window.location.pathname;
 const modalEle = document.querySelector(".modal");
 const modalImage = document.querySelector(".modalImage");
+
+let BOT_NAME= '';
+let BOT_IMG = '';
 
 function myFunction(classN) {
   let element = document.body;
@@ -32,6 +32,9 @@ myFunction("dark-mode");
 
 msgerForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  BOT_NAME= document.querySelector(".header__name--title").innerText;
+  BOT_IMG = document.querySelector(".header__avatar img").currentSrc;
 
   const msgText = msgerInput.value;
   if (!msgText) return;
@@ -73,8 +76,6 @@ function botResponse(rawText) {
     userName,
   }).done(function (data, botNameAW) {
     const msgText = data;
-    console.log(data);
-    console.log(botNameAW);
     appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
   });
 }
