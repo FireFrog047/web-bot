@@ -8,8 +8,6 @@ body {
   font-family: "Lato", sans-serif;
   background: white;
   color: black;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 html {
@@ -46,6 +44,8 @@ html {
   flex-flow: column wrap;
   /* justify-content: space-between; */
   width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 
   /* height: 100vh; */
 }
