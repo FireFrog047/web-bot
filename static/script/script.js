@@ -18,21 +18,6 @@ let userName = window.location.pathname;
 const modalEle = document.querySelector(".modal");
 const modalImage = document.querySelector(".modalImage");
 
-// function appHeight() {
-//   const doc = document.documentElement;
-//   doc.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
-// }
-
-// window.addEventListener("resize", appHeight);
-// appHeight();
-
-const appHeight = () => {
-  const doc = document.documentElement;
-  doc.style.setProperty("--app-height", `${window.innerHeight}px`);
-};
-window.addEventListener("resize", appHeight);
-appHeight();
-
 function myFunction(classN) {
   let element = document.body;
   let currentsidebarClass = sideBarRight.className;
