@@ -14,6 +14,9 @@ def userChat(userName):
             botProfielPictureAW="https://i.pinimg.com/originals/f7/85/10/f78510d0487088afb50abd9eedd477a1.jpg",
             botCityAW= "New York",
             botAgeAW= "23",
+            botFbLinkAW="https://www.facebook.com/",
+            botInstaLinkAW="https://www.instagram.com/",
+            botSnapLinkAW="https://www.snapchat.com/"
             )
     else:
         return render_template("404.html")
