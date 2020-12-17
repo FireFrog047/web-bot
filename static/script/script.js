@@ -8,8 +8,8 @@ const profileButton2 = document.querySelector(".header__name");
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
-const BOT_NAME="test";
-const BOT_IMG = "static/resources/pp.jpg";
+const BOT_NAME= document.querySelector(".header__name--title").innerText;
+const BOT_IMG = document.querySelector(".header__avatar img").currentSrc;
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 
 const PERSON_NAME = "You";
