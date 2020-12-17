@@ -32,7 +32,10 @@ body {
   background-color: #1a2236 !important;
   color: #663399;
 }
-
+.dark-mode .fix__icon--darkMode {
+  padding: 15px 20px;
+  color: rebeccapurple;
+}
 .wrapper {
   display: flex;
   flex-flow: column wrap;
