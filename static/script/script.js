@@ -17,6 +17,9 @@ let userName = window.location.pathname;
 const modalEle = document.querySelector(".modal");
 const modalImage = document.querySelector(".modalImage");
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
 function myFunction(classN) {
   let element = document.body;
   let currentsidebarClass = sideBarRight.className;
