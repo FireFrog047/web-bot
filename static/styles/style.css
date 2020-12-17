@@ -8,8 +8,8 @@ body {
   font-family: "Lato", sans-serif;
   background: white;
   color: black;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
+  /* height: calc(var(--vh, 1vh) * 100); */
 }
 
 .dark-mode {
