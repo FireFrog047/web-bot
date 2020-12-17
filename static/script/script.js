@@ -8,8 +8,13 @@ const profileButton2 = document.querySelector(".header__name");
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
+<<<<<<< HEAD
 const BOT_NAME= document.querySelector(".header__name--title").innerText;
 const BOT_IMG = document.querySelector(".header__avatar img").currentSrc;
+=======
+const BOT_NAME = "test";
+const BOT_IMG = "static/resources/pp.jpg";
+>>>>>>> f50983b190180316936be2ef597af49f553c45a8
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 
 const PERSON_NAME = "You";
@@ -17,14 +22,6 @@ let userMsgCount = 0;
 let userName = window.location.pathname;
 const modalEle = document.querySelector(".modal");
 const modalImage = document.querySelector(".modalImage");
-
-// function appHeight() {
-//   const doc = document.documentElement;
-//   doc.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
-// }
-
-// window.addEventListener("resize", appHeight);
-// appHeight();
 
 function myFunction(classN) {
   let element = document.body;
