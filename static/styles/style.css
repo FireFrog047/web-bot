@@ -10,10 +10,6 @@ body {
   color: black;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 .dark-mode {
   background-color: #1a2236 !important;
   color: white !important;
@@ -45,9 +41,13 @@ html {
   /* justify-content: space-between; */
   width: 100%;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /* min-height: -webkit-fill-available; */
 
   /* height: 100vh; */
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 /* header css start */
