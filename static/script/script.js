@@ -27,6 +27,8 @@ function myFunction(classN) {
   msgerForm.classList.toggle(classN);
 }
 
+myFunction("dark-mode");
+
 msgerForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
