@@ -8,7 +8,7 @@ const profileButton2 = document.querySelector(".header__name");
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
-const BOT_NAME="test";
+const BOT_NAME = "test";
 const BOT_IMG = "static/resources/pp.jpg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 
@@ -25,6 +25,13 @@ const modalImage = document.querySelector(".modalImage");
 
 // window.addEventListener("resize", appHeight);
 // appHeight();
+
+const appHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+};
+window.addEventListener("resize", appHeight);
+appHeight();
 
 function myFunction(classN) {
   let element = document.body;
