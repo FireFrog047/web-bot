@@ -191,11 +191,20 @@ body {
 .sidebar__right--top2 {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 40px;
+  border-bottom: 1px solid rebeccapurple;
+  padding-bottom: 10px;
+}
+.sidebar__right--top2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
+.sidebar__right--top2-1 span:nth-child(1) {
+  border-bottom: 2px solid rebeccapurple;
+}
 .social__icons {
-  /* margin-top: 17px; */
+  margin-top: 17px;
   display: flex;
   justify-content: space-between;
 }
@@ -234,6 +243,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-auto-rows: 120px;
   grid-auto-flow: dense;
+  margin-top: 15px;
 }
 
 .horizontal {
@@ -482,7 +492,6 @@ body {
   .sidebar__right--top2-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
   }
 
   .sidebar__right--top2-1 span h5 {
@@ -496,7 +505,6 @@ body {
   .msger-chat {
     margin-left: 110px;
     margin-right: 480px;
-    /* background-color: rgb(255, 255, 255); */
   }
 
   .msger-inputarea {
