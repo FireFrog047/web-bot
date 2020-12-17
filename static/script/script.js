@@ -8,9 +8,10 @@ const profileButton2 = document.querySelector(".header__name");
 const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
+const BOT_NAME=;
 const BOT_IMG = "static/resources/pp.jpg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-const BOT_NAME = "Samira";
+
 const PERSON_NAME = "You";
 let userMsgCount = 0;
 let userName = window.location.pathname;
@@ -78,8 +79,10 @@ function botResponse(rawText) {
     msg: rawText,
     msgCount: userMsgCount,
     userName,
-  }).done(function (data) {
+  }).done(function (data, botNameAW) {
     const msgText = data;
+    console.log(data);
+    console.log(botNameAW);
     appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
   });
 }
