@@ -39,9 +39,13 @@ body {
 
 .wrapper{
   @supports (-webkit-appearance:none) {
-    min-height: calc(100vh - 56px);
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
   }
 }
+
+
 
 .wrapper {
   display: flex;
