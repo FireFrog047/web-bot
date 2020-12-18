@@ -36,14 +36,20 @@ body {
   padding: 15px 20px;
   color: rebeccapurple;
 }
+
 .wrapper {
   display: flex;
   flex-flow: column wrap;
   /* justify-content: space-between; */
   width: 100%;
-  min-height: calc(100vh - 56px);
-  /* min-height: 100vh; */
+  min-height:100vh;
   height: 100%;
+}
+
+.wrapper{
+  @supports (-webkit-appearance:none) {
+    min-height: calc(100vh - 56px);
+  }
 }
 
 /* header css start */
