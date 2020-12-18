@@ -37,21 +37,16 @@ body {
   color: rebeccapurple;
 }
 
-.wrapper{
-  @supports (-webkit-appearance:none) {
-    .os-android & {
-      min-height: calc(100vh - 56px);
-    }
-  }
-}
-
-
-
 .wrapper {
   display: flex;
   flex-flow: column wrap;
   /* justify-content: space-between; */
   width: 100%;
+  @supports (-webkit-appearance:none) {
+    .os-android & {
+      min-height: calc(100vh - 56px);
+    }
+  }
   min-height:100vh;
   height: 100%;
 }
