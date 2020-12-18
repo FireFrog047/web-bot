@@ -124,9 +124,9 @@ document.querySelector(".close").addEventListener("click", () => {
   modalEle.style.display = "none";
 });
 
-// function scrollToBottom() {
-//   window.scrollTo(0, document.body.scrollHeight);
-// }
-// if (navigator.appVersion.indexOf("Chrome/") != -1) {
-//   scrollToBottom();
-// }
+let isChrome= navigator.appVersion.indexOf("Chrome/") != -1;
+let userAgent = navigator.userAgent.toLowerCase();
+let isAndroid= userAgent.indexOf("android") > -1;
+if(isChrome==true && isAndroid==true){
+  document.querySelector(".wrapper").style.minHeight ="calc(100vh - 56px)"
+}
