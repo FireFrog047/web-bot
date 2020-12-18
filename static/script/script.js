@@ -124,9 +124,9 @@ document.querySelector(".close").addEventListener("click", () => {
   modalEle.style.display = "none";
 });
 
-function scrollToBottom() {
-  window.scrollTo(0, document.body.scrollHeight);
-}
-if (navigator.appVersion.indexOf("Chrome/") != -1) {
-  scrollToBottom();
-}
+// function scrollToBottom() {
+//   window.scrollTo(0, document.body.scrollHeight);
+// }
+// if (navigator.appVersion.indexOf("Chrome/") != -1) {
+//   scrollToBottom();
+// }
