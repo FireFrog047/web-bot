@@ -8,6 +8,7 @@ body {
   font-family: "Lato", sans-serif;
   background: white;
   color: black;
+  height: 100%;
 }
 
 .dark-mode {
@@ -41,6 +42,7 @@ body {
   /* justify-content: space-between; */
   width: 100%;
   min-height: 100vh;
+  height: 100%;
 }
 
 /* header css start */
