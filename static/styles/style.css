@@ -37,12 +37,6 @@ body {
   color: rebeccapurple;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  .wrapper{
-      min-height: calc(100vh - 56px);
-  }  
-}
-
 .wrapper {
   display: flex;
   flex-flow: column wrap;
