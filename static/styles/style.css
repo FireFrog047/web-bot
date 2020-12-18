@@ -37,6 +37,12 @@ body {
   color: rebeccapurple;
 }
 
+.wrapper{
+  @supports (-webkit-appearance:none) {
+    min-height: calc(100vh - 56px);
+  }
+}
+
 .wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -44,12 +50,6 @@ body {
   width: 100%;
   min-height:100vh;
   height: 100%;
-}
-
-.wrapper{
-  @supports (-webkit-appearance:none) {
-    min-height: calc(100vh - 56px);
-  }
 }
 
 /* header css start */
